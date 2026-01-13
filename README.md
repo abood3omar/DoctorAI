@@ -54,12 +54,12 @@ The system integrates **8 specialized Deep Learning models**, each trained for a
 
 <div align="center">
   <h3>🏠 Home & Dashboard</h3>
-  <img src="screenshots/home.png" alt="Home Page" width="800"/>
+  <img src="screenshots/d1.png" alt="Home Page" width="800"/>
   
   <br/><br/>
 
   <h3>📊 Diagnosis & XAI Results</h3>
-  <img src="screenshots/result.png" alt="Diagnosis Result" width="800"/>
+  <img src="screenshots/d2.png" alt="Diagnosis Result" width="800"/>
 </div>
 
 ---
