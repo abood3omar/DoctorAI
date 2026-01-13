@@ -53,7 +53,7 @@ The system integrates **8 specialized Deep Learning models**, each trained for a
 ## 📸 Screenshots | صور من النظام
 
 <div align="center">
-  <h3>🏠 Home & Dashboard</h3>
+  
   <img src="screenshots/d1.png" alt="Home Page" width="800"/>
   
   <br/><br/>
