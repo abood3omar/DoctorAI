@@ -73,3 +73,29 @@ Receives an image file and returns the diagnostic result with confidence score.
 ```json
 Content-Type: multipart/form-data
 Body: { "image": "scan_file.jpg", "model_type": "brain_tumor" }
+Response:
+{
+  "status": "success",
+  "prediction": "Positive",
+  "confidence": 98.4,
+  "explanation": "High density region detected in upper quadrant..."
+}
+
+📸 Screenshots
+(Add screenshots of your dashboard here)
+
+<div align="center"> <img src="https://www.google.com/search?q=https://via.placeholder.com/800x400%3Ftext%3DDoctor%2BAI%2BDashboard%2BPreview" alt="Dashboard" width="800"/> </div>
+
+👨‍💻 My Contribution
+As the Backend Architect & Lead Developer, my role focused on:
+
+API Development: Building robust Flask APIs to wrap AI models and serve predictions to the frontend.
+
+System Integration: Connecting the Deep Learning engine with the user interface using AJAX.
+
+Optimization: Ensuring fast inference times and handling concurrent requests efficiently.
+
+UI Implementation: Developing the responsive web dashboard using Tailwind CSS.
+
+📬 Contact
+Abdalrhman Hamed - Software Engineer <br />
