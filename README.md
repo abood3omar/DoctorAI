@@ -80,7 +80,7 @@ Response:
   "confidence": 98.4,
   "explanation": "High density region detected in upper quadrant..."
 }
-
+```
 📸 Screenshots
 (Add screenshots of your dashboard here)
 
