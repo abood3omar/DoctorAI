@@ -1,102 +1,152 @@
-<div align="center">
-
 # 🩺 Doctor AI
-### Intelligent Medical Diagnostic Assistant
-### نظام التشخيص الطبي الذكي
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+### Intelligent Medical Decision Support Prototype
+### نظام ذكي لدعم التشخيص الطبي
 
-<br />
+**Python · Flask · TensorFlow · Tailwind CSS · JavaScript**
 
-<p align="center">
-  <b>🏆 Finalist at Jordan Students Pitch Competition 2025 (JSPC) 🏆</b>
-  <br />
-  <i>Queen Rania Center for Entrepreneurship (QRCE)</i>
-  <br />
-  <br />
-  <i>"Bridging the gap between algorithmic precision and medical expertise using Explainable AI."</i>
-</p>
-
-</div>
+🏆 **Finalist — Jordan Students Pitch Competition 2025 (JSPC)**  
+*Queen Rania Center for Entrepreneurship (QRCE)*
 
 ---
 
 ## 📖 Overview | نبذة عن المشروع
 
-**Doctor AI** is a comprehensive medical diagnostic platform designed to support doctors, not replace them. We pitched this project at the **JSPC 2025**, highlighting our focus on **Explainable AI (XAI)**.
+**Doctor AI** is an AI-powered medical decision support prototype designed to explore how deep learning and Explainable AI (XAI) can assist healthcare professionals in interpreting medical information.
 
-The system analyzes medical imaging using Deep Learning models to detect diseases with **>95% accuracy** across 8 critical pathways, providing interpretable results to help physicians make informed decisions.
+The platform integrates multiple machine learning models through a Python Flask backend and provides a web interface for submitting inputs, requesting predictions, and viewing results.
 
----
+The project was presented at the **Jordan Students Pitch Competition 2025 (JSPC)**, where our team reached the finalist stage.
 
-## 🧠 AI Models & Disease Pathways | النماذج والأمراض
-The system integrates **8 specialized Deep Learning models**, each trained for a specific diagnostic pathway:
-
-| Disease / Condition | Model Architecture | Accuracy |
-| :--- | :--- | :--- |
-| **Brain Tumor Detection** | CNN / ResNet | **98.4%** |
-| **Pneumonia (X-Ray)** | VGG16 | **96.2%** |
-| **Skin Cancer (Melanoma)** | EfficientNet | **95.8%** |
-| **Diabetes Retinopathy** | CNN Custom | **97.1%** |
-| **Alzheimer's MRI** | DenseNet | **94.5%** |
-| **Breast Cancer** | ResNet50 | **96.0%** |
-| **Heart Disease** | ANN | **95.5%** |
-| **Kidney Stone** | CNN | **95.0%** |
-
-*(Note: The models are wrapped via a Flask API to ensure fast inference and modularity.)*
+> **Disclaimer:** Doctor AI is an academic prototype developed for educational and research purposes. It is not a clinically validated medical device and should not be used for actual medical diagnosis or treatment decisions.
 
 ---
 
-## 📸 Screenshots | صور من النظام
+## 🧠 AI Models & Supported Conditions
 
-<div align="center">
-  
-  <img src="screenshots/d1.png" alt="Home Page" width="800"/>
-  
-  <br/><br/>
+The project brings together eight specialized models covering medical imaging and other health-related prediction tasks.
 
-  <h3>📊 Diagnosis & XAI Results</h3>
-  <img src="screenshots/d2.png" alt="Diagnosis Result" width="800"/>
-</div>
+| Condition | Model Architecture | Reported Accuracy |
+|---|---|---|
+| Brain Tumor Detection | CNN / ResNet | 98.4% |
+| Pneumonia (X-Ray) | VGG16 | 96.2% |
+| Skin Cancer (Melanoma) | EfficientNet | 95.8% |
+| Diabetic Retinopathy | Custom CNN | 97.1% |
+| Alzheimer's MRI | DenseNet | 94.5% |
+| Breast Cancer | ResNet50 | 96.0% |
+| Heart Disease | ANN | 95.5% |
+| Kidney Stone | CNN | 95.0% |
+
+*The figures above are project-reported model evaluation results, not measures of clinical diagnostic performance. The underlying evaluation datasets and methodology should be consulted before comparing model accuracy.*
 
 ---
 
-## ⚙️ Technical Architecture | البنية التقنية
+## 📸 Project Screenshots
 
-I designed the system using a **Microservices-oriented architecture**:
+### Home Page
 
-* **Backend (My Role):** Built with **Python (Flask)**. It acts as the API Gateway that receives images from the frontend, processes them, and routes them to the correct AI model.
-* **Frontend:** Developed using **HTML, Tailwind CSS, and JavaScript**. It connects to the Flask API via AJAX for real-time, asynchronous predictions.
-* **AI Integration:** Models are loaded into memory efficiently to handle concurrent requests without latency.
+![Doctor AI Home Page](screenshots/d1.png)
+
+### Prediction Results
+
+![Doctor AI Prediction Results](screenshots/d2.png)
+
+---
+
+## ⚙️ Technical Overview
+
+Doctor AI connects a browser-based frontend with Python backend services and machine learning models.
+
+The backend provides the communication layer between the web interface and the AI components developed by the project team.
+
+### Backend — Python & Flask
+
+The backend is responsible for:
+
+- Exposing RESTful endpoints for prediction requests.
+- Receiving and validating user-submitted inputs.
+- Handling medical image uploads for supported prediction tasks.
+- Connecting requests to the appropriate AI model interfaces.
+- Processing model responses and returning structured results.
+- Supporting communication between the frontend and AI components.
+
+### Frontend
+
+The web interface was developed using:
+
+- HTML
+- Tailwind CSS
+- JavaScript
+- AJAX
+
+It allows users to interact with the prototype, submit inputs, and view the results returned by the backend.
+
+### AI Integration
+
+The AI models are integrated with the application through Flask-based services.
+
+This separation allows the web interface to communicate with the prediction functionality through defined API endpoints.
 
 ---
 
 ## 🚀 Key Features
 
-* ✅ **Explainable AI (XAI):** Visualizing the "Why" behind the diagnosis.
-* ✅ **High Precision:** Accuracy exceeding 95% on validation datasets.
-* ✅ **Real-time Processing:** Optimized Flask APIs for instant feedback.
-* ✅ **Secure & Scalable:** Designed to handle sensitive medical data securely.
+- **Multiple Prediction Pathways:** Integration of eight AI models for different medical prediction tasks.
+- **RESTful API Integration:** Flask endpoints connecting the web interface with AI components.
+- **Medical Image Uploads:** Input handling for supported image-based prediction tasks.
+- **Prediction Results:** Structured responses displayed through the web interface.
+- **Explainable AI:** Exploration of interpretable AI outputs to support understanding of model predictions.
+- **Responsive Interface:** Web interface developed using Tailwind CSS and JavaScript.
 
 ---
 
-## 👨‍💻 My Contribution
+## 👨‍💻 My Contributions
 
-**Abdalrhman Hamed - Backend Architect & Lead Developer**
+**Abdalrhman Hamed — Backend Development & AI Integration**
 
-* **Architected** the entire Flask infrastructure to support multiple AI models.
-* **Developed** RESTful APIs to bridge the Deep Learning engine with the web interface.
-* **Built** the responsive dashboard using Tailwind CSS.
-* **Implemented** the logic for handling medical image uploads and validation.
+My work focused on building the application backend and connecting the AI components with the web interface.
+
+Key contributions:
+
+- Developed backend services and RESTful APIs using Python and Flask.
+- Integrated AI models developed by other team members with the application backend.
+- Implemented request handling, input validation, and medical image upload functionality.
+- Connected frontend interactions with Flask endpoints using JavaScript and AJAX.
+- Contributed to developing the responsive web interface using Tailwind CSS.
+- Worked on integrating the different components into a functional prototype.
+
+**AI model development and training were handled by other members of the project team.**
+
+---
+
+## 🛠️ Technology Stack
+
+| Area | Technologies |
+|---|---|
+| Backend | Python, Flask |
+| AI / Machine Learning | TensorFlow, Deep Learning Models |
+| Frontend | HTML, Tailwind CSS, JavaScript |
+| API Integration | RESTful APIs, AJAX |
+| Project Type | Academic AI Prototype |
+
+---
+
+## 🏆 Competition
+
+**Jordan Students Pitch Competition 2025 (JSPC)**  
+**Achievement:** Finalist  
+**Organizer:** Queen Rania Center for Entrepreneurship (QRCE)
+
+The competition provided an opportunity to present the Doctor AI concept and demonstrate how software engineering and artificial intelligence can be combined in healthcare-related applications.
 
 ---
 
 ## 📬 Contact
 
 **Abdalrhman Hamed**
-<br />
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/abdalrhman-hamed-5b929725b/)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/abood3omar)
+
+[LinkedIn](https://www.linkedin.com/in/abdalrhman-hamed-5b929725b/) · [GitHub](https://github.com/abood3omar)
+
+---
+
+*Doctor AI — Exploring the intersection of software engineering, artificial intelligence, and healthcare.*
