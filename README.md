@@ -3,7 +3,7 @@
 ### Intelligent Medical Decision Support Prototype
 ### نظام ذكي لدعم التشخيص الطبي
 
-**Python · Flask · TensorFlow · Tailwind CSS · JavaScript**
+**Python · Flask · TensorFlow · Tailwind CSS · JavaScript** 
 
 🏆 **Finalist — Jordan Students Pitch Competition 2025 (JSPC)**  
 *Queen Rania Center for Entrepreneurship (QRCE)*
